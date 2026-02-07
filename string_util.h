@@ -52,7 +52,7 @@ void removeSpaces(std::string& s) {
     s = s.substr(i, j - i + 1);
 }
 
-const bool contains(const std::string& str, char c) {
+bool contains(const std::string& str, char c) {
 	for(int i = 0; i < str.size(); ++i) {
 		if(str.at(i) == c) return true;
 	}
